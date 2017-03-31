@@ -1,0 +1,51 @@
+
+.sideBarBg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: rgba(0, 0, 0, 0.6);
+}
+.sideBarLeft{
+    width: 40%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #2e945a;
+}
+.sideMenu li{
+    width: 100%;
+    height: 3.4rem;
+    line-height: 3.4rem;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.5);
+    &.active,&:hover{
+        background: #277b4c;
+    }
+    a{
+        color: #fff;
+        display: block;
+        img{
+            width: 2rem;
+            height: 2rem;
+            padding: 0.7rem;
+            float: left;
+        }
+        text-align: left;
+    }
+}
+
+/* fade 动画 */
+.fade-enter-active,.fade-leave-active{
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-enter,.fade-leave-active{
+    opacity: 0;
+}
+.fadeMove-enter-active,.fadeMove-leave-active{
+    transition: all 0.5s ease-in-out;
+}
+.fadeMove-enter,.fadeMove-leave-active{
+    opacity: 0;
+    transform: translateX(-100%);
+}
