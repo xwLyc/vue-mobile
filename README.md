@@ -1,6 +1,6 @@
-# lyc
+# vue-mobile
 
-> A Vue.js project
+> A simple Vue.js project  
 
 ## Build Setup
 
