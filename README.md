@@ -6,8 +6,9 @@
 
 ``` bash
 # install dependencies
-npm install
+npm install 或 cnpm install
 注意： node-sass 模块容易安装失败，建议 使用 cnpm install
+
 # serve with hot reload at localhost:8080
 npm run dev
 
