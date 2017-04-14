@@ -28,7 +28,6 @@ export default {
     data(){
         return{
             show:false,
-            isActive:false,
             flag:0,
             sideData:[
                 {icon: iconfont1, name:'菜单一', route:'/nav1'},
@@ -38,11 +37,10 @@ export default {
             ]
         }
     },
-    mounted(){
+    created(){
         this.$root.$on('showSide',()=>{
             this.leftMove();
         });
-
         //设置进入当前路由的左侧菜单栏状态
         let _route = this.$route.path;
         this.flag = (()=>{

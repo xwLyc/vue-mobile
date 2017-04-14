@@ -1,0 +1,62 @@
+//顶部
+.swiper-slide {
+    width: auto;
+    // height: 3.4rem;
+    padding: 0px 1rem;
+    position: relative;
+    font-size: 1.4rem;
+    p{
+        width: 100%;
+        height: 0.2rem;
+        background: #2e945a;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        z-index: 1;
+        display: none;
+    }
+}
+.orderTop{
+    width: 100%;
+    height: 3.4rem;
+    line-height: 3.4rem;
+    overflow: hidden;
+    box-shadow: 0px 1px 0px #C9C9C9;
+    .active{
+        color: #2e945a;
+        border-bottom: 1px solid #2e945a;
+        p{
+            display: block;
+        }
+    }
+}
+
+//侧边栏
+.orderSlide{
+    width: 30%;
+    min-height: calc(100vh - 7.4rem);
+    float: left;
+    box-shadow: 1px 0px 0px #C9C9C9;
+    ul{
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+        li{
+            height: 3.4rem;
+            line-height: 3.4rem;
+            text-align: center;
+            font-size: 1.4rem;
+            color: #333;
+            &.active{
+                background: #2e945a;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+//内容
+.orderContent{
+    width: 70%;
+    min-height: calc(100vh - 7.4rem);
+    margin-left: 30%;
+
+}

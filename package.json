@@ -9,7 +9,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.16.1",
     "vue": "^2.2.2",
+    "vue-awesome-swiper": "^2.4.0",
+    "vue-axios": "^2.0.1",
     "vue-router": "^2.2.0",
     "vue-validator": "^3.0.0-alpha.2"
   },
