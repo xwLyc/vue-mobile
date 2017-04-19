@@ -38,7 +38,7 @@ export default {
             ]
         }
     },
-    mounted(){
+    created(){
         this.$root.$on('showSide',()=>{
             this.leftMove();
         });

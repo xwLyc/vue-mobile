@@ -12,7 +12,7 @@
                 title:'功能2'
             }
         },
-        mounted () {
+        created () {
             this.$root.$emit('head-title',this.title)
         }
     }
