@@ -56,11 +56,15 @@
                 //激活当前swiper点击 active
                 this.swiperOption.onTap = (e)=>{
                     this.clickIndex = e.clickedIndex;
+                    //orderSlide列表值
                     this.$root.$emit('orderSlideList',JSON.stringify(data[this.clickIndex]));
                     //设置改点击的nav对应的slide的状态
                     this.$root.$emit('slideActive',this.slideActiveIndex[this.clickIndex]);
+                    this.$root.$emit('topIndex',this.clickIndex);
                 }
                 this.$root.$emit('orderSlideList',JSON.stringify(data[this.clickIndex]))
+                this.$root.$emit('slideActive',this.slideActiveIndex[this.clickIndex]);
+                this.$root.$emit('topIndex',this.clickIndex);
             }).catch((err)=>{
                 console.log(err)
             });

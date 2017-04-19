@@ -17,11 +17,11 @@ export default new Router({
     {
       path: '/home',
       component:  resolve => require(['../components/common/Home'],resolve),
-      redirect:'/nav1',
+      redirect:'/order',
       children:[
         {
-          path: '/nav1',
-          component:  resolve => require(['../components/page/nav1'],resolve)
+          path: '/order',
+          component:  resolve => require(['../components/page/order'],resolve)
         },
         {
           path: '/nav2',

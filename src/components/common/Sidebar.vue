@@ -30,7 +30,7 @@ export default {
             show:false,
             flag:0,
             sideData:[
-                {icon: iconfont1, name:'菜单一', route:'/nav1'},
+                {icon: iconfont1, name:'点菜系统', route:'/order'},
                 {icon: iconfont2, name:'菜单二', route:'/nav2'},
                 {icon: iconfont3, name:'菜单三', route:'/nav3'},
                 {icon: iconfont4, name:'菜单四', route:'/nav4'}

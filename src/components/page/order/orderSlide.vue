@@ -22,18 +22,21 @@
                  })
                  this.slideList = slideList;
              });
-
              //对应nav下的slide状态
              this.$root.$on('slideActive',(i)=>{
                  this.activeIndex = i;
+                 this.activeClick(i);
              });
+
+             
 
         },
         methods:{
             activeClick(index){
-                console.log(this.slideList[index].classdetail)
+                // console.log(this.slideList[index].classdetail)
                 this.activeIndex=index;
                 this.$root.$emit('activeIndex',this.activeIndex);
+                this.$root.$emit('contentList',this.slideList[index].classdetail);
             }
         }
     }
