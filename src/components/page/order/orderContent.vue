@@ -6,13 +6,7 @@
                 <p class="detail">{{list.detail}}</p>
                 <div class="spriceBox">
                     <span class="sprice">{{list.price}}</span><span>元/</span><span class="unitprice">{{list.unitprice}}</span>
-                    <v-price :pid="list.p_id,priceArr"></v-price>
-                    <!--<div class="optprice">
-                        <label class="add red fr" @click="add(list.p_id)">+</label>
-                        <span class="num fr">{{list.count}}</span>
-                        <label class="sub fr" @click="sub(list.p_id)">-</label>
-                    </div>-->
-
+                    <v-price :p-id="list.p_id" :p-price="list.price" :p-count="countArr"></v-price>
                 </div>
             </li>
         </ul>
@@ -25,7 +19,7 @@
         data(){
             return{
                 contentList:'',
-                priceArr:[]
+                countArr:[]
 
             }
         } ,
@@ -33,9 +27,29 @@
             vPrice
         },
         created(){
+            let arr = new Array();
+            // let obj = new Object();
             this.$root.$on('contentList',(data)=>{
                 this.contentList = data;
                 // console.log(data)
+
+                data.forEach(function(element,index) {
+                    // console.log(element)
+                    if(this.countArr[element.p_id]==undefined){
+                        this.countArr[element.p_id] = 0;
+                    }
+                    // obj[index].count = 0;
+                    // console.log(obj)
+                    // console.log(this.countArr)
+                }, this);
+
+                this.$root.$emit('vCount');
+
+            });
+            this.$root.$on('pidCount',(pid,count)=>{
+
+                this.countArr[pid]=count;
+
             });
 
         }

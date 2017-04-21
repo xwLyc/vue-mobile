@@ -48,11 +48,13 @@
                 for(let i = 0; i < data.length; i++){
                     indexArr.push(0);
                 }
+               
                 this.slideActiveIndex = indexArr;
                 this.$root.$on("activeIndex",(i)=>{
                     this.slideActiveIndex[this.clickIndex]=i;
                     // console.log(this.slideActiveIndex)
                 })
+
                 //激活当前swiper点击 active
                 this.swiperOption.onTap = (e)=>{
                     this.clickIndex = e.clickedIndex;
@@ -65,6 +67,7 @@
                 this.$root.$emit('orderSlideList',JSON.stringify(data[this.clickIndex]))
                 this.$root.$emit('slideActive',this.slideActiveIndex[this.clickIndex]);
                 this.$root.$emit('topIndex',this.clickIndex);
+
             }).catch((err)=>{
                 console.log(err)
             });

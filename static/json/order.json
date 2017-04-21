@@ -74,6 +74,14 @@
                             "unitprice": "斤"
                         },
                         {
+                            "p_id": "8",
+                            "count": "0",
+                            "name": "板菇",
+                            "detail": "大小不均",
+                            "price": "4.19",
+                            "unitprice": "斤"
+                        },
+                        {
                             "p_id": "9",
                             "count": "0",
                             "name": "口蘑",
