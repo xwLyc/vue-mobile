@@ -28,42 +28,34 @@
         },
         created(){
             let arr = new Array();
-            // let obj = new Object();
             this.$root.$on('contentList',(data)=>{
                 this.contentList = data;
                 // console.log(data)
-
                 data.forEach(function(element,index) {
                     // console.log(element)
                     if(this.countArr[element.p_id]==undefined){
-                        this.countArr[element.p_id] = 0;
+                        let obj = new Object();
+                        obj.count = 0;
+                        obj.price = element.price;
+                        this.countArr[element.p_id] = obj;
                     }
-                    // obj[index].count = 0;
-                    // console.log(obj)
-                    // console.log(this.countArr)
                 }, this);
 
                 this.$root.$emit('vCount');
 
             });
             this.$root.$on('pidCount',(pid,count)=>{
-
-                this.countArr[pid]=count;
+                this.countArr[pid].count= count;
 
             });
+            this.$root.$on('changeCount',()=>{
+                this.$root.$emit('totalArr',this.countArr)
+            })
 
+        },
+        methods:{
+            
         }
-        // ,
-        // methods:{
-        //     add(count){
-        //         count++;
-        //         console.log(count)
-        //     },
-        //     sub(count){
-        //         this.count--;
-        //         console.log(this.count)
-        //     }
-        // }
     }
 </script>
 <style lang="scss" scoped>

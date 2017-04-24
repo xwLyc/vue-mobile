@@ -16,7 +16,21 @@
             }
         } ,
         created(){
-           
+            this.$root.$on('totalArr',(data)=>{
+                this.shopNum=0;
+                this.totalPrice=0;
+                // console.log(data)
+                data.forEach(function(e) {
+                    // console.log(e)
+                    if(e.count>0){
+                        this.shopNum++;
+                        this.totalPrice += e.count*(e.price*100); //先转整数计算，然后除100，防止出现浮点运算误差
+                    }
+
+                }, this);
+                this.totalPrice = this.totalPrice/100;
+            });
+
         }
     }
 </script>

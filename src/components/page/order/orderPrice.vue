@@ -20,7 +20,7 @@
                 // 如果不加 nextTick 视图总是上一次更新的状态，坑了我好久
                 // 官方说明 异步更新队列 http://cn.vuejs.org/v2/guide/reactivity.html#异步更新队列
                 this.$nextTick(()=>{
-                    this.count = this.pCount[this.pId];
+                    this.count = this.pCount[this.pId].count;
                 })
 
             });
@@ -37,6 +37,11 @@
                     this.count--;
                     this.$root.$emit('pidCount',pId,this.count);
                 }
+            }
+        },
+        watch:{
+            count(){
+                this.$root.$emit('changeCount')
             }
         }
     }
