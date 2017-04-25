@@ -2,7 +2,7 @@
 <template lang="html">
     <header>
         <p class="menu" @click="showSide">
-            <img src="/static/images/icon-menu.png" />
+            <img src="../../../static/images/icon-menu.png" />
         </p>
         <slot name="title"></slot>
     </header>

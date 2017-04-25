@@ -1,7 +1,7 @@
 <template>
     <div>
         <p>安琪拉</p>
-        <img src="/static/images/logo.png" alt="">
+        <img src="../../../static/images/logo.png" alt="">
         
     </div>
 </template>

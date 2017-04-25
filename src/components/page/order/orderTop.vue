@@ -12,6 +12,7 @@
     // import Vue from 'vue'
     import { swiper, swiperSlide, swiperPlugins } from 'vue-awesome-swiper'
 
+
     export default {
         data(){
             return{
@@ -28,7 +29,7 @@
             swiperSlide
         },
         created(){
-            this.axios.get('/static/json/order.json').then((response)=>{
+            this.axios.get('../../../../static/json/order.json').then((response)=>{
                 // console.log(response.data);
                 let arrJson = new Array();
                 response.data.forEach(function(e) {
