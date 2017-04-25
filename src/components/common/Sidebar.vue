@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import iconfont1 from '../../images/iconfont1.png'
-import iconfont2 from '../../images/iconfont2.png'
-import iconfont3 from '../../images/iconfont3.png'
-import iconfont4 from '../../images/iconfont4.png'
+import iconfont1 from '../../../static/images/iconfont1.png'
+import iconfont2 from '../../../static/images/iconfont2.png'
+import iconfont3 from '../../../static/images/iconfont3.png'
+import iconfont4 from '../../../static/images/iconfont4.png'
 
 export default {
     data(){

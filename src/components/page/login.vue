@@ -1,10 +1,10 @@
 <template lang="html">
   <div class="loginBox">
-      <p class="logo"><img src="../../images/logo.png"></p>
+      <p class="logo"><img src="/static/images/logo.png"></p>
         <form class="ms-login" :model="ruleForm">
           <div class="ms-inp">
             <p class="inp">
-              <span><img src="../../images/user.png" alt=""></span>
+              <span><img src="/static/images/user.png" alt=""></span>
               <input type="text" name="" v-model="ruleForm.username" @blur="vlUsername" placeholder="username">
               <span class="error" v-if='userError'>请输入用户名</span>
             </p>
@@ -12,7 +12,7 @@
           </div>
           <div class="ms-inp">
             <p class="inp">
-              <span><img src="../../images/password.png" alt=""></span>
+              <span><img src="/static/images/password.png" alt=""></span>
               <input type="password" name="" v-model="ruleForm.password" @blur="vlPassword" placeholder="password">
               <span class="error" v-if='passError'>请输入密码</span>
             </p>

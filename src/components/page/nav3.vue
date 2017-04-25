@@ -1,7 +1,7 @@
 <template>
     <div>
         <p>what's your name</p>
-        <img src="../../images/logo.png" alt="">
+        <img src="/static/images/logo.png" alt="">
         
     </div>
 </template>

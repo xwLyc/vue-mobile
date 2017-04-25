@@ -28,7 +28,7 @@
                     }
 
                 }, this);
-                this.totalPrice = this.totalPrice/100;
+                this.totalPrice = (this.totalPrice/100).toFixed(2);
             });
 
         }
