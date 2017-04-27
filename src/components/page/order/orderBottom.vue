@@ -3,7 +3,7 @@
         <p class="fl">
             共 <span>{{shopNum}}</span> 种商品，总价 <span>{{totalPrice}}</span> 元
         </p>
-        <button class="fr payBtn">去结算</button>
+        <button class="fr payBtn" @click="pay">去结算</button>
     </footer>
 </template>
 <script>
@@ -31,6 +31,11 @@
                 this.totalPrice = (this.totalPrice/100).toFixed(2);
             });
 
+        },
+        methods:{
+            pay(){
+                alert('知道你没钱，就别提交了。。。')
+            }
         }
     }
 </script>
