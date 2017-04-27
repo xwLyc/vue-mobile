@@ -18,6 +18,7 @@
             </p>
             <p class="line" :class=" {error:passError}"></p>
           </div>
+          <div class="tip">Tips: 用户名密码随便填</div>
           <a href="#" class="login-btn" @click="submitForm('ruleForm')">登陆</a>
         </form>
         
