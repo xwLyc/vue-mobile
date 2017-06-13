@@ -1,17 +1,18 @@
+@import "../base.scss";
 @mixin lineHeight34{
-    height: 3.4rem;
-    line-height: 3.4rem;
+    height: rem(34px);
+    line-height: rem(34px);
 }
 .loginBox{
-  margin-top: 6rem;
+  margin-top: rem(60px);
     .logo{
         text-align: center;
-        width: 10rem;
+        width: rem(100px);
         margin: 0px auto;
     }
     .ms-inp{
         width: 80%;
-        margin: 1.6rem auto;
+        margin: rem(16px) auto;
         box-sizing: border-box;
     }
 }
@@ -28,13 +29,13 @@
     left: 0;
     z-index: 1;
     img{
-        width: 2.2rem;
+        width: rem(22px);
         vertical-align: middle;
     }
   }
   input{
     width: 84%;
-    height: 3.4rem;
+    height: rem(34px);
     display: block;
     margin-left: 16%;
     color: #333;
@@ -42,9 +43,9 @@
     .error{
         color: #ff4949;
         width: 80%;
-        font-size: 1.2rem;
+        font-size: rem(12px);
         text-align: left;
-        top: 3.2rem;
+        top: rem(32px);
         left: 14%;
     }
 }
@@ -53,7 +54,7 @@
 
 .line{
   width: 100%;
-  height: 0.3rem;
+  height: rem(3px);
   border: 1px solid #18c94f;
   border-top: none;
   transition: all .15s linear;
@@ -68,13 +69,13 @@
   @include lineHeight34;
   background: #18c94f;
   color: #FFF;
-  margin: 2.6rem auto;
+  margin: rem(26px) auto;
 }
 
 
 .tip{
   text-align: left;
-  font-size: 1.2rem;
+  font-size: rem(12px);
   color: #099bce;
   margin-left: 10%;
 }

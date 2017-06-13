@@ -1,4 +1,4 @@
-
+@import "../base.scss";
 .sideBarBg{
     position: fixed;
     top: 0;
@@ -16,9 +16,9 @@
 }
 .sideMenu li{
     width: 100%;
-    height: 3.4rem;
-    line-height: 3.4rem;
-    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.5);
+    height: rem(34px);
+    line-height: rem(34px);
+    border-bottom: rem(1px) solid rgba(255, 255, 255, 0.5);
     &.active,&:hover{
         background: #277b4c;
     }
@@ -26,9 +26,9 @@
         color: #fff;
         display: block;
         img{
-            width: 2rem;
-            height: 2rem;
-            padding: 0.7rem;
+            width: rem(20px);
+            height: rem(20px);
+            padding: rem(7px);
             float: left;
         }
         text-align: left;
