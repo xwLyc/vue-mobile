@@ -1,8 +1,9 @@
+@import "../base.scss";
 //顶部
 .orderTop{
     width: 100%;
-    height: 3.4rem;
-    line-height: 3.4rem;
+    height: rem(34px);
+    line-height: rem(34px);
     overflow: hidden;
     box-shadow: 0px 1px 0px #C9C9C9;
     .active{
@@ -14,16 +15,16 @@
     }
     .swiper-slide {
         width: auto;
-        // height: 3.4rem;
-        padding: 0px 1rem;
+        // height: rem(34px);
+        padding: 0px rem(10px);
         position: relative;
-        font-size: 1.4rem;
+        font-size: rem(14px);
         p{
             width: 100%;
-            height: 0.2rem;
+            height: rem(2px);
             background: #2e945a;
             position: absolute;
-            bottom: -1px;
+            bottom: rem(-1px);
             left: 0;
             z-index: 1;
             display: none;
@@ -34,18 +35,19 @@
 //侧边栏
 .orderSlide{
     width: 30%;
-    height: calc(100vh - 7.4rem);
+    height: rem(456px);
     overflow-y: scroll;
     float: left;
     box-shadow: 1px 0px 0px #C9C9C9;
     ul{
-        padding-top: 1rem;
-        padding-bottom: 4rem;
+        padding-top: rem(1px);
+        padding-bottom: rem(40px);
+
         li{
-            height: 3.4rem;
-            line-height: 3.4rem;
+            height: rem(34px);
+            line-height: rem(34px);
             text-align: center;
-            font-size: 1.4rem;
+            font-size: rem(14px);
             color: #333;
             &.active{
                 background: #2e945a;
@@ -57,50 +59,51 @@
 //内容
 .orderContent{
     width: 70%;
-    height: calc(100vh - 7.4rem);
+    height: calc(100vh - rem(74px));
     overflow-y: scroll;
     margin-left: 30%;
     text-align: left;
     ul{
-        padding-bottom: 4rem;
+        padding-bottom: rem(40px);
         .name{
             font-weight: bold;
             color: #666;
-            font-size: 1.5rem;
-            padding-left: 1rem;
-            margin-top: 0.5rem;
+            font-size: rem(15px);
+            padding-left: rem(10px);
+            margin-top: rem(5px);
         }
         .detail{
-            font-size: 1.2rem;
+            font-size: rem(12px);
             color: rgb(128, 128, 128);
-            padding-left: 1rem;
-            line-height: 2rem;
+            padding-left: rem(10px);
+            line-height: rem(20px);
             width: 90%;
         }
         .spriceBox{
-            padding-left: 1rem;
-            height: 3rem;
-            line-height: 3rem;
-            font-size: 1.2rem;
+            padding-left: rem(10px);
+            height: rem(30px);
+            line-height: rem(30px);
+            font-size: rem(12px);
             border-bottom: 1px  solid #C9C9C9;
             position: relative;
             .sprice{
                 color: #ff3939;
             }
             .optprice{
-                width: 6rem;
+                width: rem(60px);
                 position: absolute;
                 z-index: 1;
-                right: 0.6rem;
-                top: 0.5rem;
+                right: rem(6px);
+                top: rem(5px);
                 .add,.sub,.num{
-                    width: 1.8rem;
-                    height: 1.8rem;
-                    line-height: 1.8rem;
+                    width: rem(18px);
+                    height: rem(18px);
+                    line-height: rem(18px);
                     text-align: center;
-                    font-size: 1.4rem;
+                    font-size: rem(14px);
                     border: 1px solid #C9C9C9;
                     display: block;
+                    float: right;
                     &.red{
                         color: #ff6000;
                         border-color: #ff6000;
@@ -108,8 +111,8 @@
                 }
                 .num{
                     border: none;
-                    font-size: 1.2rem;
-                    line-height: 1.9rem;
+                    font-size: rem(12px);
+                    line-height: rem(19px);
                 }
             }
         }
@@ -118,32 +121,32 @@
 }
 //底部
 .orderBottom{
-    height: 3.6rem;
-    line-height: 3.6rem;
+    height: rem(36px);
+    line-height: rem(36px);
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 2;
     background: #FFF;
     // border-top: 1px solid #2e945a;
-    box-shadow: 0px -1px 0px #2e945a;
-    font-size: 1.5rem;
+    box-shadow: 0px rem(-1px) 0px #2e945a;
+    font-size: rem(15px);
     p{
         text-align: left;
-        margin-left: 1rem;
+        margin-left: rem(10px);
         span{
             color: #ff3939;
         }
     }
     .payBtn{
         width: 25%;
-        height: 2.8rem;
-        line-height: 2.8rem;
-        margin-top: 0.4rem;
-        margin-right: 0.5rem;
-        border-radius: 0.3rem;
+        height: rem(28px);
+        line-height: rem(28px);
+        margin-top: rem(4px);
+        margin-right: rem(5px);
+        border-radius: rem(3px);
         background: #2e945a;
         color: #FFF;
-        font-size: 1.5rem;
+        font-size: rem(15px);
     }
 }

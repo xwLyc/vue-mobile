@@ -1,7 +1,15 @@
+$defaultSize: 32px !default;
+@function rem($px){
+    @return $px / $defaultSize * 1rem;
+}
+html{
+    font-size: 10vw;
+    font-family: "微软雅黑";
+};
 *{
   margin: 0px;
   padding: 0px;
-  // font-size: 1.6rem;
+  font-size: rem(16px);
 }
 img{
   max-width: 100%;
@@ -29,10 +37,4 @@ li{
 }
 .hp100{
     height: 100%;
-}
-.fl{
-  float: left;
-}
-.fr{
-  float: right;
 }
