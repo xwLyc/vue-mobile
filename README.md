@@ -1,6 +1,8 @@
 # vue-mobile
 
-> A simple Vue.js project  
+> A simple Vue.js project  
+
+新手练习项目，没有用到vuex，状态管理确实超级复杂头疼
 
 ## Build Setup
 
